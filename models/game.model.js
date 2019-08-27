@@ -16,8 +16,7 @@ const gameSchema = new mongoose.Schema({
     required: true
   },
   teamScore: {
-    type: Number,
-    required: true
+    type: Number
   },
   contender: {
     type: mongoose.Schema.Types.ObjectId,
@@ -25,18 +24,15 @@ const gameSchema = new mongoose.Schema({
     required: true
   },
   contenderScore: {
-    type: Number,
-    required: true
+    type: Number
   },
   plays: [{
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Play',
-    required: true
+    ref: 'Play'
   }],
   place: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Place',
-    required: true
+    ref: 'Place'
   }
 });
 

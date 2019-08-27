@@ -13,7 +13,7 @@ module.exports.create = (req, res, next) => {
       if (user) {
         throw createError(409, `User with email ${req.body.email} already exists`);
       } else {
-        user = new User({name: req.body.name, password: req.body.password, email: req.body.email});
+        user = new User({ name: req.body.name, password: req.body.password, email: req.body.email });
         user.save()
           .then(user => {
             res.status(201).json(user);
