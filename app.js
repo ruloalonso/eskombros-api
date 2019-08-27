@@ -14,13 +14,13 @@ const corsConfig = require('./config/cors.config');
 
 const usersRouter = require('./routes/users.routes');
 const sessionsRouter = require('./routes/sessions.routes');
-const gamesRouter = require('./routes/games.routes');
 const playsRouter = require('./routes/plays.routes');
-const sportsRouter = require('./routes/sports.routes');
-const eskombrosRouter = require('./routes/eskombros.routes');
-const contendersRouter = require('./routes/contenders.routes');
+const playersRouter = require('./routes/players.routes');
 const teamsRouter = require('./routes/teams.routes');
-const placesRouter = require('./routes/places.routes');
+// const contendersRouter = require('./routes/contenders.routes');
+// const sportsRouter = require('./routes/sports.routes');
+// const gamesRouter = require('./routes/games.routes');
+// const placesRouter = require('./routes/places.routes');
 
 const app = express();
 
@@ -46,13 +46,13 @@ app.use(passport.session());
 
 app.use('/users', usersRouter);
 app.use('/sessions', sessionsRouter);
-app.use('/games', gamesRouter);
 app.use('/plays', playsRouter);
-app.use('/sports', sportsRouter);
-app.use('/eskombros', eskombrosRouter);
-app.use('/contenders', contendersRouter);
+app.use('/players', playersRouter);
 app.use('/teams', teamsRouter);
-app.use('/places', placesRouter);
+// app.use('/games', gamesRouter);
+// app.use('/sports', sportsRouter);
+// app.use('/contenders', contendersRouter);
+// app.use('/places', placesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
