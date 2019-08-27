@@ -1,0 +1,50 @@
+{
+  "name": "eskombros-api",
+  "version": "1.0.0",
+  "description": "a friendly sport club API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruloalonso/eskombros-api.git"
+  },
+  "keywords": [
+    "eskombros",
+    "api",
+    "sport",
+    "friends"
+  ],
+  "author": "Rulo Alonso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruloalonso/eskombros-api/issues"
+  },
+  "homepage": "https://github.com/ruloalonso/eskombros-api#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "csv-parse": "^3.1.2",
+    "debug": "^4.0.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "faker": "^4.1.0",
+    "file-system": "^2.2.2",
+    "http-errors": "^1.7.1",
+    "mongoose": "^5.3.1",
+    "morgan": "^1.9.1",
+    "nba": "^4.2.2",
+    "nba-stats-client": "^1.0.0",
+    "nba.js": "^0.6.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
